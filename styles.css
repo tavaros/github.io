@@ -1,40 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cadastro</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-
-<body>
-    <div class="bloco">
-        <div class="bloco-central">
-            <form action="cadastros_realizados.html" method="get">
-
-                <div class="form-field">
-                    <label for="nome">Nome completo (sem abreviações)</label>
-                    <input type="text" autocomplete="off" id="nome" style="border: none">
-                </div>
-                <div class="form-field">
-                    <label for="nome">CPF</label>
-                    <input type="text" autocomplete="off" id="CPF" style="border: none">
-                </div>
-                <div class="form-field">
-                    <label for="nome">Telefone</label>
-                    <input type="text" autocomplete="off" id="telefone" style="border: none">
-                </div>
-                <div class="form-field">
-                    <label for="email">Email</label>
-                    <input type="email" autocomplete="off" id="email" style="border: none">
-                </div>
-                <button class="botao" type="submit">Cadastrar</button>
-
-            </form>
-        </div>
-    </div>
-</body>
-
-</html>
+.botao {
+    color: white;
+    background: #00c8b3;
+    border-radius: 10px 10px 10px 10px;
+    border-style: none;
+    width: 180px;
+    height: 30px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.botao:hover {
+    opacity: 0.7;
+    border-radius: 10px 10px 10px 10px;
+}
+.bloco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.bloco-central {
+    width: 173px;
+    max-width: 100%;
+    position: relative;
+    padding-top: 100px;
+    margin-bottom: 20px;
+    z-index: 0;
+}
+.form-field {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 8px;
+    border-bottom: 1px solid gray;
+}
+textarea:focus, input:focus, select:focus {
+    outline: 0;
+}
